@@ -1,0 +1,83 @@
+<!-- books that recently read:  -->
+<div class="databases">
+
+  <h2>General-purpose Databases</h2>
+  <h3>DuckDB</h3>
+  <ul>
+    <li>
+      <strong>small, adaptive, OLAP-style</strong> by ...<br>
+      DuckDB is popular as it supports various types of input (super easy to use).<br>
+      Users can easily generate tables locally without scheme design. <br>
+    </li>
+      <a href="https://www.youtube.com/watch?v=pZV9FvdKmLc">DuckDB: How to Build 100x Faster Analytics Databases</a> by Hannes Mühleisen, 2024 <br>
+    <li>
+      <strong>ART</strong> as the index <br>
+    </li>
+  </ul>
+
+  <h3>PostgreSQL</h3>
+  <ul>
+    <li>
+      <strong>relational, reliable, multi-functional, well-coded</strong> by Michael Stonebraker<br>
+      PostgreSQL supports R-tree related indexes well. <br>
+    </li>
+    <li>
+      <strong>BRIN</strong> <br>
+    </li>
+    <li>
+      <strong>GIN</strong> <br>
+    </li>
+    <li>
+      <strong>GiST and SP-GiST</strong> for range types<br>
+      Transform ranges/periods into two-dimensional points, then indexed with spatial indexes.
+    </li>
+     <li>
+      <strong>pgvector</strong> <br>
+      <a href="https://github.com/timescale/pgvectorscale">pgvectorscale</a> with Rust <br>
+      Postgres extension for vector search (DiskANN), complements pgvector. <br>
+      <a href="https://github.com/timescale/pg_textsearch">pg_textsearch</a> with C <br>
+      PostgreSQL extension for BM25 relevance-ranked full-text search. <br>
+    </li>
+ </ul>
+
+  <h3>MongoDB</h3>
+  <ul>
+    <li>
+      <strong>(so-called) NoSQL, document</strong> with C++<br>
+      MongoDB supports fast insertions with flexible schema design (good for IOT applications). <br>
+    </li>
+    <li>
+      <strong>sharding</strong> <br>
+    </li>
+ </ul>
+
+  <h2>Specialized Databases/Extensions</h2>
+  <h3>TigerBeetle</h3>
+  <ul>
+    <li>
+      <strong>financial transaction database</strong> with Zig and Rust<br>
+      <a href="https://www.youtube.com/watch?v=ayG7ltGRRHs">Databases, Ambitions, and a Testing Silver Bullet?</a> by Joran Dirk Greef, 2023 <br>
+      Coding with Zig for safety. <br>
+      <a href="https://www.youtube.com/watch?v=sC1B3d9C_sI">The FASTEST and SAFEST Database</a> by Joran Dirk Greef, 2024 <br>
+      Most transaction uses similar query patterns. <br>
+      Existing databases seldom handle disk failures well.<br>
+      Present a cool game visualizing databse tasks <br>
+    </li>
+  </ul>
+
+  <h3>InfluxDB</h3>
+  <ul>
+    <li>
+      <strong>time-series database</strong> with (C++ to) Rust<br>
+      <a href="https://www.youtube.com/watch?v=r4LkaPkxang">InfluxDB: The Evolution of a Time Series Database</a> by Paul Dix, 2025 <br>
+    </li>
+  </ul>
+
+  <h3>TimescaleDB</h3>
+  <ul>
+    <li>
+      <strong>time-series extension of PostgreSQL</strong> with C<br>
+      A time-series database for real-time analytics packaged as a Postgres extension. <br>
+    </li>
+  </ul>
+
